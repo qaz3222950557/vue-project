@@ -22,9 +22,9 @@ export const constantRoute = [
         name: 'Layout',
         component: layout,
         meta: {
-            title: 'layout',
+            title: '',
             hidden: true,
-            icon: 'Avatar'
+            icon: 'Promotion'
         },
         children: [
             {
@@ -54,12 +54,12 @@ export const constantRoute = [
         path: '/acl',
         name: 'Acl',
         component: () => import('@/layout/index.vue'),
-        naem: 'Acl',
         meta: {
             title: '权限管理',
             hidden: false,
             icon: 'Lock',
         },
+        redirect: '/acl/user',
         children: [
             {
                 path: '/acl/user',

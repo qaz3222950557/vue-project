@@ -46,8 +46,8 @@ app.use(router)
 import pinia from './store/index'
 app.use(pinia)
 
-
-
+//引入路由鉴权文件
+import './permission'
 
 
 //将应用挂载在挂载点上
